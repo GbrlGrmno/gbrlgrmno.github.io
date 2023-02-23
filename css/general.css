@@ -1,0 +1,247 @@
+/* ==================================================== */
+/*       GLOBAL RESET AND DEFAULT SETTINGS              */
+/* =================================================== */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  background-color: #f2f1ee;
+  color: #333;
+}
+
+/* ======================= */
+
+/* ==================================================== */
+/*               PREVENT HORIZONTAL OVERFLOW            */
+/* =================================================== */
+
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+}
+
+/* ========================================================= */
+
+.grid--2--cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.container {
+  padding: 4rem 3rem 0 5rem;
+}
+
+.container-two {
+  max-width: 150rem;
+  margin: 0 auto;
+}
+
+/* ==================================================== */
+/*  ADDING SHADOW BACKGROUND WHEN ASIDE NAV IS OPENED  */
+/* =================================================== */
+
+.shadow-background {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.nav-open .shadow-background {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ==================================================== */
+/* ADDING SQUARE BOXES ON THE VERTEX OF EACH FIXED BAR */
+/* =================================================== */
+
+.bottom-bar-left {
+  position: relative;
+}
+
+.bx-bl {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 3rem;
+  height: 100%;
+
+  background-color: #f2f1ee;
+  border-right: 1px solid #d5d4cc;
+  border-left: 0.5px solid #d5d4cc;
+}
+
+.bottom-bar-right {
+  position: relative;
+}
+
+.bx-br {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3rem;
+  height: 100%;
+  background-color: #f2f1ee;
+  border-right: 0.5px solid #d5d4cc;
+  border-left: 1px solid #d5d4cc;
+}
+
+.top-bar-left {
+  position: relative;
+}
+
+.bx-tl {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  width: 3rem;
+  height: 100%;
+  background-color: #f2f1ee;
+  border-right: 1px solid #d5d4cc;
+  border-left: 1px solid #d5d4cc;
+  margin-left: 1px;
+}
+
+.top-bar-right {
+  position: relative;
+}
+
+.bx-tr {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 3rem;
+  height: 100%;
+  background-color: #f2f1ee;
+  border-right: 1px solid #d5d4cc;
+  border-left: 1px solid #d5d4cc;
+
+  z-index: 1000000;
+}
+
+/* ==================================================== */
+/*                 ADDING DARK MODE                     */
+/* =================================================== */
+
+.dark,
+.dark .bars,
+.dark .bx {
+  background-color: #121212;
+}
+
+.dark .social-icon-a:link,
+.dark .social-icon-a:visited,
+.dark .sections-ul-a:link,
+.dark .sections-ul-a:visited {
+  color: white;
+}
+
+.dark .sections-ul-a:hover,
+.dark .sections-ul-a:active {
+  border-bottom: 1px solid white;
+}
+
+.dark .aside-nav-a:link,
+.dark .aside-nav-a:visited {
+  color: white;
+}
+
+.dark .aside-nav-a:hover,
+.dark .aside-nav-a:active {
+  color: #b82632;
+}
+
+.dark .aside-nav {
+  background-color: #121212;
+}
+
+.dark .heading-terciary,
+.dark .table-of-contents,
+.dark .menu-icon {
+  color: white;
+}
+
+.dark .nav-btn {
+  background-color: #121212;
+}
+
+.dark .gabriel {
+  color: white;
+  filter: drop-shadow(0 0.2rem 0 #121212);
+}
+.dark .gabriel-side {
+  color: white;
+}
+
+.dark {
+  color: white;
+}
+
+.dark .project-img {
+  background-image: none;
+  box-shadow: inset 0 0 0 0.2rem #f2f1ee;
+  background-color: #121212;
+}
+
+/* MOBILE DARK MODE */
+
+.mobile-dark-mode-wrapper {
+  height: 6.4rem;
+  width: 6.4rem;
+  margin-right: 3rem;
+  align-self: flex-end;
+  margin-top: 32rem;
+  transition: 1s all;
+  display: none;
+}
+
+.mobile-dark-mode-btn {
+  border: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #121212;
+}
+
+.moon-icon {
+  width: 2.8rem;
+  height: 2.8rem;
+  color: #f2f1ee;
+}
+
+.dark .mobile-dark-mode-btn {
+  background-color: #f2f1ee;
+}
+
+.dark .moon-icon {
+  color: #121212;
+}
+
+/* ============================================ */

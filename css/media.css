@@ -1,0 +1,320 @@
+/* ================================ */
+/*      SMALL LAPTOPOS (1344PX)
+/* ================================*/
+
+@media (max-width: 84em) {
+  .container-two {
+    max-width: 130rem;
+  }
+
+  .zerothree {
+    font-size: 20rem;
+  }
+
+  .projects {
+    font-size: 14rem;
+  }
+
+  .project-img-container {
+    padding: 0 5rem 12.8rem 7rem;
+  }
+
+  .about-img-container {
+    padding-left: 2rem;
+  }
+}
+
+/*===================================*/
+/*     LANDSCAPE TABLETS (1200PX)    */
+/*===================================*/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .section-number {
+    font-size: 20rem;
+  }
+  .project-card {
+    width: 80%;
+  }
+
+  .bx-tr {
+    margin-left: -0.1rem;
+  }
+}
+
+/* ================ */
+/* TABLETS (960PX) */
+/* ================== */
+
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+
+  .mobile-dark-mode-wrapper,
+  .social-icon-aside {
+    display: block;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .text-container:last-child {
+    padding-bottom: 0;
+  }
+
+  .middle-bar-left,
+  .middle-bar-right,
+  .top-bar,
+  .right-bar,
+  .left-bar,
+  .bottom-bar,
+  .shadow-background,
+  .divisor {
+    display: none;
+  }
+
+  .mobile-bar {
+    padding: 0 3rem;
+    position: fixed;
+    top: 0;
+    height: 6rem;
+    width: 100vw;
+    border-bottom: 1px solid #d5d4cc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: inherit;
+    z-index: 10000000;
+  }
+
+  .mobile-nav-btn-wrapper {
+    padding-top: 1.2rem;
+  }
+
+  .mobile-btn {
+    background-color: inherit;
+    border: none;
+    display: inline-block;
+  }
+
+  .main-section-container {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main {
+    padding: 0;
+  }
+
+  .img-section-container {
+    margin: 0;
+  }
+
+  .aside-nav {
+    width: 100vw;
+    height: 100vh;
+    top: -100vh;
+    left: 0;
+    z-index: 1000;
+    margin-top: 5rem;
+  }
+
+  .menu-footer-wrapper {
+    margin-top: auto;
+    transform: translateY(-100%);
+    height: 6rem;
+  }
+
+  .current-section {
+    font-size: 1.8rem;
+  }
+
+  .nav-open .aside-nav {
+    top: 0;
+  }
+
+  .gabriel-side {
+    transform: rotate(0);
+  }
+
+  .section-about {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .project-img-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .projects-container {
+    padding: 0 2rem;
+  }
+  .project-grid {
+    column-gap: 0rem;
+  }
+}
+
+/* ==================== */
+/* Fixing stuff (848PX) */
+/* ==================== */
+
+@media (max-width: 53em) {
+  .grid--2--cols {
+    grid-template-columns: 1fr;
+  }
+
+  .container-two {
+    max-width: 110rem;
+  }
+
+  .about-img-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .main {
+    align-self: flex-end;
+  }
+
+  .zerothree {
+    font-size: 16rem;
+  }
+
+  .zerotwo {
+    font-size: 16rem;
+  }
+
+  .projects {
+    font-size: 11rem;
+  }
+
+  .section-cta::after {
+    font-size: 20rem;
+    top: 25%;
+    transform: translateY(100%);
+    transform: rotate(90deg);
+  }
+}
+
+/* ========================= */
+/* SMALLER TABLETS (704PX)   */
+/* ========================= */
+
+@media (max-width: 44em) {
+  .section-cta::after {
+    display: none;
+  }
+
+  .section-cta::before {
+    content: "04";
+    font-size: 14rem;
+    position: absolute;
+    left: 1%;
+    bottom: 1%;
+    font-weight: 700;
+    color: #f2f1ee;
+  }
+
+  .about-img span {
+    font-size: 9rem;
+  }
+
+  .zerothree {
+    font-size: 14rem;
+  }
+
+  .projects-container {
+    max-width: 120rem;
+  }
+
+  .projects {
+    font-size: 9rem;
+  }
+
+  .wip {
+    font-size: 2.8rem;
+  }
+}
+
+/* ===================== */
+/*     PHONES (640PX)    */
+/* ===================== */
+
+@media (max-width: 40em) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .go-to-project:link,
+  .go-to-project:visited {
+    transition: 0.4s ease-in-out;
+  }
+
+  .go-to-project:hover,
+  .go-to-project:active {
+    box-shadow: inset 80rem 0 0 0 #ce6868;
+  }
+
+  .project-img {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .projects {
+    font-size: 8.5rem;
+  }
+
+  .left-card {
+    transform: translate(0);
+  }
+
+  .section-cta::before {
+    font-size: 10rem;
+  }
+  .section-cta::before {
+    display: none;
+  }
+}
+
+/* ========================== */
+/*    MOBILE MEDIUM (384PX)   */
+/* ========================== */
+
+@media (max-width: 24em) {
+  .projects {
+    font-size: 7rem;
+  }
+
+  .zerotwo {
+    font-size: 14rem;
+  }
+
+  .about-img span {
+    font-size: 8rem;
+  }
+
+  .select-section {
+    font-size: 8rem;
+  }
+
+  .aside-nav-ul {
+    padding: 2.4rem;
+  }
+}
+
+/* ========================== */
+/*     MOBILE SMALL (320PX)   */
+/* ========================== */
+
+@media (max-width: 20em) {
+  html {
+    font-size: 43.75%;
+  }
+}
