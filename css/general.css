@@ -217,7 +217,7 @@ body {
   width: 6.4rem;
   margin-right: 3rem;
   align-self: flex-end;
-  margin-top: 32rem;
+  margin-top: auto;
   transition: 1s all;
   display: none;
 }
